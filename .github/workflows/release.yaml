@@ -62,12 +62,12 @@ jobs:
         
       - name: Package android build output (32-bit)
         # 重命名 32 位 APK 文件
-        run: cp build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk Kazumi_android_${{ env.tag }}_armeabi-v7a.apk
+        run: cp build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk Kazumi_android_armeabi-v7a.apk
         shell: bash
 
       - name: Package android build output (64-bit)
         # 重命名 64 位 APK 文件
-        run: cp build/app/outputs/flutter-apk/app-arm64-v8a-release.apk Kazumi_android_${{ env.tag }}_arm64-v8a.apk
+        run: cp build/app/outputs/flutter-apk/app-arm64-v8a-release.apk Kazumi_android_arm64-v8a.apk
         shell: bash
 
       - name: Upload android outputs
